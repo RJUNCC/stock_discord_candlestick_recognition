@@ -1,0 +1,21 @@
+# Discord Bot Configuration
+discord:
+  token: ${oc.env:DISCORD_TOKEN}
+  channel_id: 857754913659682827
+  command_prefix: "!"
+
+# Stock Data Fetcher Configuration
+data:
+  api_key: ${oc.env:STOCK_API_KEY}
+  symbols:
+    - AAPL
+    - GOOGL
+    - MSFT
+    - SPX
+    - NVDA
+    - TSLA
+
+# Analysis Configuration
+analysis:
+  model_path: "models/your_model.h5"
+  pattern_threshold: 0.8
